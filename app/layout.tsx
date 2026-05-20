@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
 import { TooltipProvider } from '@radix-ui/react-tooltip';
+import { siteConfig } from '@/config/site';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,14 +16,14 @@ export const metadata: Metadata = {
     template: '%s | Sedot WC Bebas Mampet',
     default: 'Sedot WC Bebas Mampet - Layanan Profesional 24 Jam',
   },
-  description: 'Layanan penyedotan WC profesional, cepat, dan terpercaya 24 jam. Bersih, Cepat, Profesional. Hubungi kami di 087784003407',
+  description: `Layanan penyedotan WC profesional, cepat, dan terpercaya 24 jam. Bersih, Cepat, Profesional. Hubungi kami di ${siteConfig.phone}`,
   keywords: 'sedot WC, sedot limbah, sedot lumpur, cuci tangki air, layanan WC Pontianak',
   icons: {
     icon: '/logobebasmampet.png',
   },
   openGraph: {
     title: 'Sedot WC Bebas Mampet',
-    description: 'Layanan penyedotan WC profesional 24 jam',
+    description: `Layanan penyedotan WC profesional 24 jam. Hubungi kami di ${siteConfig.phone}`,
     type: 'website',
   },
 };
