@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     template: '%s | Jasa Sedot WC Farisa Jaya',
     default: 'Jasa Sedot WC Farisa Jaya - Layanan Profesional 24 Jam',
   },
-  description: `Layanan penyedotan WC profesional, cepat, dan terpercaya 24 jam. Bersih, Cepat, Profesional. Hubungi kami di ${siteConfig.phone}`,
-  keywords: 'sedot WC, sedot limbah, sedot lumpur, cuci tangki air, layanan WC Pontianak',
+  description: `${siteConfig.description}. Hubungi kami di ${siteConfig.phone}`,
+  keywords: siteConfig.keywords,
   icons: {
     icon: '/logo.png',
   },
   openGraph: {
     title: 'Jasa Sedot WC Farisa Jaya',
-    description: `Layanan penyedotan WC profesional 24 jam. Hubungi kami di ${siteConfig.phone}`,
+    description: `${siteConfig.description}. Hubungi kami di ${siteConfig.phone}`,
     type: 'website',
   },
 };

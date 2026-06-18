@@ -6,12 +6,34 @@ const whatsappPhone = contactPhone.startsWith("0")
 
 const googleTagManagerId = "GTM-WHV4G73R";
 
+const seoKeywords = [
+	"jasa sedot WC Jakarta",
+	"sedot WC Jakarta",
+	"sedot WC Jabodetabek",
+	"sedot WC Jakarta Selatan",
+	"sedot WC Jakarta Timur",
+	"sedot WC Jakarta Barat",
+	"sedot WC Jakarta Utara",
+	"sedot WC Jakarta Pusat",
+	"sedot WC Bekasi",
+	"sedot WC Depok",
+	"sedot WC Tangerang",
+	"sedot WC Bogor",
+	"jasa sedot WC 24 jam",
+	"sedot WC mampet",
+	"sedot limbah Jakarta",
+	"sedot limbah Jabodetabek",
+	"cuci tangki air Jakarta",
+	"Jasa Sedot WC Farisa Jaya",
+];
+
 export const siteConfig = {
 	name: "Jasa Sedot WC Farisa Jaya",
 	url: "https://bebasmampet.my.id",
 	ogImage: "https://bebasmampet.my.id/og.jpg",
 	description:
-		"Jasa Sedot WC Farisa Jaya - Layanan sedot WC profesional, cepat, dan terpercaya 24 jam setiap hari",
+		"Jasa Sedot WC Farisa Jaya - Layanan sedot WC profesional, cepat, dan terpercaya 24 jam untuk Jakarta dan Jabodetabek",
+	keywords: seoKeywords,
 	phone: contactPhone,
 	email: "info@bebasmampet.my.id",
 	address: "Melayani Jabodetabek",
