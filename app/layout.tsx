@@ -2,7 +2,6 @@ import { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { Metadata } from 'next';
-import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
 import { TooltipProvider } from '@radix-ui/react-tooltip';
 import { siteConfig } from '@/config/site';
@@ -36,9 +35,13 @@ export default async function RootLayout({
   return (
     <html className="h-full" suppressHydrationWarning>
       <head>
-        <Script id="google-tag-manager" strategy="beforeInteractive">
-          {siteConfig.analytics.googleTagManagerScript}
-        </Script>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: siteConfig.analytics.googleTagManagerScript,
+          }}
+        />
+        {/* End Google Tag Manager */}
       </head>
       <body
         className={cn(
@@ -46,6 +49,7 @@ export default async function RootLayout({
           inter.className,
         )}
       >
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${siteConfig.analytics.googleTagManagerId}`}
@@ -54,6 +58,7 @@ export default async function RootLayout({
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
