@@ -4,7 +4,7 @@ const whatsappPhone = contactPhone.startsWith("0")
 	? `62${contactPhone.slice(1)}`
 	: contactPhone;
 
-const googleTagManagerId = "GTM-W4N4LKDX";
+const googleTagManagerId = "GTM-WHV4G73R";
 
 export const siteConfig = {
 	name: "Jasa Sedot WC Farisa Jaya",
