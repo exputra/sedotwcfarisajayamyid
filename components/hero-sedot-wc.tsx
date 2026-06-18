@@ -22,8 +22,8 @@ const HeroNew = () => {
       {/* Background Layer */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-background-baru.png"
-          alt="Armada Sedot WC"
+          src="/hero-background-farisa-jaya.png"
+          alt="Armada Sedot WC Farisa Jaya"
           aria-hidden="true"
           className="w-full h-full object-cover object-[75%_center] lg:object-right"
         />
@@ -41,7 +41,7 @@ const HeroNew = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <span className="inline-block text-xs sm:text-sm lg:text-base font-bold text-blue-600 tracking-wider uppercase">
-              JASA SEDOT WC PROFESIONAL
+              JASA SEDOT WC FARISA JAYA
             </span>
           </motion.div>
 

@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 const Logo = () => {
-  const logoSrc = '/logobebasmampet.png';
+  const logoSrc = '/logo.png';
 
   return (
     <div className="flex items-center gap-3 leading-0">
       <div className="w-8 h-8 relative flex-shrink-0 overflow-hidden rounded-full">
         <Image
           src={logoSrc}
-          alt="Bebas Mampet Logo"
+          alt="Farisa Jaya Logo"
           fill
           className="object-contain"
           priority
@@ -17,7 +17,7 @@ const Logo = () => {
 
       {/* Logo Text */}
       <div className="flex flex-col">
-        <span className="text-sm font-bold leading-none text-foreground">Bebas Mampet</span>
+        <span className="text-sm font-bold leading-none text-foreground">Farisa Jaya</span>
         <span className="text-xs text-muted-foreground leading-none">Sedot WC</span>
       </div>
     </div>

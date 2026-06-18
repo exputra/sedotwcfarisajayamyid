@@ -1,20 +1,30 @@
-const contactPhone = "08212134261";
+const contactPhone = "081311885641";
 
 const whatsappPhone = contactPhone.startsWith("0")
 	? `62${contactPhone.slice(1)}`
 	: contactPhone;
 
+const googleTagManagerId = "GTM-W4N4LKDX";
+
 export const siteConfig = {
-	name: "Sedot WC Bebas Mampet",
+	name: "Jasa Sedot WC Farisa Jaya",
 	url: "https://bebasmampet.my.id",
 	ogImage: "https://bebasmampet.my.id/og.jpg",
 	description:
-		"Sedot WC Bebas Mampet - Layanan sedot WC profesional, cepat, dan terpercaya 24 jam setiap hari di Pontianak",
+		"Jasa Sedot WC Farisa Jaya - Layanan sedot WC profesional, cepat, dan terpercaya 24 jam setiap hari",
 	phone: contactPhone,
 	email: "info@bebasmampet.my.id",
 	address: "Melayani Jabodetabek",
 	links: {
 		whatsapp: `https://api.whatsapp.com/send?phone=${whatsappPhone}`,
+	},
+	analytics: {
+		googleTagManagerId,
+		googleTagManagerScript: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${googleTagManagerId}');`,
 	},
 };
 

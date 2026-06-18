@@ -13,16 +13,16 @@ import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Sedot WC Bebas Mampet',
-    default: 'Sedot WC Bebas Mampet - Layanan Profesional 24 Jam',
+    template: '%s | Jasa Sedot WC Farisa Jaya',
+    default: 'Jasa Sedot WC Farisa Jaya - Layanan Profesional 24 Jam',
   },
   description: `Layanan penyedotan WC profesional, cepat, dan terpercaya 24 jam. Bersih, Cepat, Profesional. Hubungi kami di ${siteConfig.phone}`,
   keywords: 'sedot WC, sedot limbah, sedot lumpur, cuci tangki air, layanan WC Pontianak',
   icons: {
-    icon: '/logobebasmampet.png',
+    icon: '/logo.png',
   },
   openGraph: {
-    title: 'Sedot WC Bebas Mampet',
+    title: 'Jasa Sedot WC Farisa Jaya',
     description: `Layanan penyedotan WC profesional 24 jam. Hubungi kami di ${siteConfig.phone}`,
     type: 'website',
   },
@@ -37,11 +37,7 @@ export default async function RootLayout({
     <html className="h-full" suppressHydrationWarning>
       <head>
         <Script id="google-tag-manager" strategy="beforeInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W4N4LKDX');`}
+          {siteConfig.analytics.googleTagManagerScript}
         </Script>
       </head>
       <body
@@ -52,7 +48,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       >
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-W4N4LKDX"
+            src={`https://www.googletagmanager.com/ns.html?id=${siteConfig.analytics.googleTagManagerId}`}
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}

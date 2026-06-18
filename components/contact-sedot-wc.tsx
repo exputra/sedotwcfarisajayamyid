@@ -38,7 +38,7 @@ const ContactSedotWC = () => {
     setIsSubmitting(true);
 
     const message = [
-      'Halo, saya ingin menggunakan layanan Sedot WC Bebas Mampet.',
+      'Halo, saya ingin menggunakan layanan Jasa Sedot WC Farisa Jaya.',
       '',
       `Nama: ${formData.name}`,
       `Email: ${formData.email}`,
